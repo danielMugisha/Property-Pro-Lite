@@ -83,7 +83,36 @@ h1, h2, h3, p {
 
 
 /* search */
+#home-search {
+    min-height: 130px;
+    background-color: #e8491d57;
+    padding-bottom: 2em;
+}
 
+#home-search form{
+    display: block;
+}
+
+#home-search .selector {
+    padding: 4px;
+    height: 40px;
+    width: 300px;
+}
+
+.search-btn {
+    height: 40px;
+    background: #af4426;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+.search-btn:hover {
+    background: #b3a39f;
+    border: none;
+}
 
 
 /* --------Services-------- */
@@ -201,7 +230,7 @@ h1, h2, h3, p {
     color: #313030
 }
 
-/* other pages */
+
 /* other pages */
 
 
@@ -287,6 +316,18 @@ h1, h2, h3, p {
         padding: 20px 20px 0 20px;
     }
 
+
+    /* search */
+
+    #home-search .selector {
+        height: 25px;
+        width: 80%;
+    }
+    
+    .search-btn {
+        display: block;
+        margin: 20px auto 0;
+    }
     
     /* --------Services-------- */
     #boxes {
