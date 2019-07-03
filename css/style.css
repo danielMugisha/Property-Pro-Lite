@@ -162,6 +162,45 @@ h1, h2, h3, p {
 }
 
 
+/* -----sign up-------- */
+
+#wrap {
+    /* width: 100%; */
+    min-height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#wrap-content {
+    width: 90%;
+    background: #b3a39f;
+    box-shadow: 0 1px 1px rgba(182, 182, 182, 0.75);
+    border:none;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#wrap-content form {
+    display: block;
+    text-align: center;
+}
+#wrap-content form input {
+    width: 60%;
+    padding: 5px;
+    height: 25px;
+    display: block;
+    margin: auto;
+}
+#wrap-content form a {
+    text-decoration: none;
+    display: block;
+    color: #666261
+}
+#wrap-content form a:hover {
+    color: #313030
+}
+
 /* other pages */
 
 
