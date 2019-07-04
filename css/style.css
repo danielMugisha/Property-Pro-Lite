@@ -57,6 +57,14 @@ h1, h2, h3, p {
     color: #f4f4f4;
 }
 
+#nav-menu ul li button {
+    padding-top: 20px;
+    color: #f4f4f4;
+    bottom: 0;
+    background: #ffffff00;
+    font-size: 20px;
+    border: none;
+}
 
 /* -------welcome-------- */
 #welcome {
@@ -190,7 +198,37 @@ h1, h2, h3, p {
     background: #e8491d57;
 }
 
+/* --------------modals----------------- */
+#bg-modal-new {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute; 
+    display: none;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    justify-content: center
+}
 
+.bg-modal-content {
+    color: #3a454d;
+    display: flex;
+    width: 70%;
+    background-color:rgb(212, 204, 204);
+    border-radius: 4px; 
+    text-align: center;
+    padding: 50px; 
+    position: absolute;
+    top: 50px; 
+    justify-content: space-evenly;
+}
+
+#details select, input {
+    display: block;
+    padding: 10px;
+    margin: 15px 0;
+    width: 250px;
+=======
 /* -----sign up-------- */
 
 #wrap {
@@ -359,6 +397,17 @@ h1, h2, h3, p {
         background: #e8491d57;
     }
     
+    #bg-modal-signup {
+       display: block;
+    }
+    
+    .bg-modal-content {
+        display: block;
+    }
+
+    .bg-modal-content iframe {
+        display: none;
+    }
 }
 
 
@@ -394,6 +443,17 @@ h1, h2, h3, p {
         height: fit-content;
         text-align: center;
     }
+    #bg-modal-signup {
+        display: block;
+     }
+     
+     .bg-modal-content {
+         display: block;
+     }
+ 
+     .bg-modal-content iframe {
+         display: none;
+     }
 }
 
 /* ---------------tablet----------------- */
@@ -415,4 +475,5 @@ h1, h2, h3, p {
         display: block;
         margin: 20px auto 0;
     }
+    
 }
