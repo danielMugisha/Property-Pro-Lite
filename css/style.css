@@ -91,7 +91,36 @@ h1, h2, h3, p {
 
 
 /* search */
+#home-search {
+    min-height: 130px;
+    background-color: #e8491d57;
+    padding-bottom: 2em;
+}
 
+#home-search form{
+    display: block;
+}
+
+#home-search .selector {
+    padding: 4px;
+    height: 40px;
+    width: 300px;
+}
+
+.search-btn {
+    height: 40px;
+    background: #af4426;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+.search-btn:hover {
+    background: #b3a39f;
+    border: none;
+}
 
 
 /* --------Services-------- */
@@ -169,7 +198,6 @@ h1, h2, h3, p {
     background: #e8491d57;
 }
 
-
 /* --------------modals----------------- */
 #bg-modal-new {
     width: 100%;
@@ -200,6 +228,44 @@ h1, h2, h3, p {
     padding: 10px;
     margin: 15px 0;
     width: 250px;
+=======
+/* -----sign up-------- */
+
+#wrap {
+    /* width: 100%; */
+    min-height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#wrap-content {
+    width: 90%;
+    background: #b3a39f;
+    box-shadow: 0 1px 1px rgba(182, 182, 182, 0.75);
+    border:none;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#wrap-content form {
+    display: block;
+    text-align: center;
+}
+#wrap-content form input {
+    width: 60%;
+    padding: 5px;
+    height: 25px;
+    display: block;
+    margin: auto;
+}
+#wrap-content form a {
+    text-decoration: none;
+    display: block;
+    color: #666261
+}
+#wrap-content form a:hover {
+    color: #313030
 }
 
 
@@ -288,6 +354,18 @@ h1, h2, h3, p {
         padding: 20px 20px 0 20px;
     }
 
+
+    /* search */
+
+    #home-search .selector {
+        height: 25px;
+        width: 80%;
+    }
+    
+    .search-btn {
+        display: block;
+        margin: 20px auto 0;
+    }
     
     /* --------Services-------- */
     #boxes {
