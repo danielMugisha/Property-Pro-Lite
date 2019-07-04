@@ -251,6 +251,7 @@ h1, h2, h3, p {
 #wrap-content form {
     display: block;
     text-align: center;
+    margin: auto;
 }
 #wrap-content form input {
     width: 60%;
