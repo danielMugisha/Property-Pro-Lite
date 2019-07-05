@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <title>Property Pro-Lite</title>
+    
+</head>
+<body>
+    <!-- header -->
+    <div id="navigation" >
+        <div id="menu">
+            <div id="logo"><h1><span>Property</span> Pro-Lite</h1></div>
+            <div id="mobile-nav">
+                <label id="humberger" for="toggle">&#10624;</label>
+            </div>
+        </div>
+        <div id="nav-menu">
+                
+            <ul>
+                <li><button>My properties</button></li>
+                <li><button onclick="myFunction()">New advert</button></li>
+                <li><button>Username</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- trending -->
+    <div id="trend-title">
+        <h1 class="content-title">My Properties</h1>
+    </div>
+    <div id="trend-properties">
+        <div id="trend-wraper">
+            <div id="prop-item" class="box">
+                <img src="images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div id="prop-item" class="box">
+                <img src="images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div id="prop-item" class="box">
+                <img src="images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div id="prop-item" class="box">
+                <img src="images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div id="prop-item" class="box">
+                <img src="images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn">View More</button>
+            </div>
+            <div id="prop-item" class="box">
+                <img src="images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div id="home-search">
+        <h2>Find you comfortable home</h2>
+        <form>
+            <select class="selector" name="location" required="required">
+                <option disabled>Select Property type</option>
+                <option>Gasabo</option>
+            </select>
+
+            <select class="selector" name="property" required="required">
+                <option disabled>Select Property type</option>
+                <option>2-Bedroom apartment</option>
+                <option>3-Bedroom apartment</option>
+                <option>Residential villa</option>
+                <option>Commercial/work place</option>
+            </select>
+            
+            <select class="selector" name="payType" required="required">
+                <option disabled>Select Property type</option>
+                <option>To Let</option>
+                <option>For Sale</option>
+            </select>
+            <button type="button" class="search-btn" >Search</button>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div id="main-footer">
+        <h3>Property Pro-Lite</br> copyright &copy; 2019</h3>
+    </div>
+
+    
+    <!-- create post model -->
+    <div id="bg-modal-new">
+            <div class="bg-modal-content">
+                <div>
+                    <p>Insert a picture</p>
+                    <iframe width="300" height="300"></iframe>
+                    <form action="#" enctype="multipart/form-data" method="POST">
+                        <input type="file"/>
+                        <input type="submit" class="btn" value="Upload image">
+                    </form>
+                </div>
+                
+                <div id="details">
+                    <p>Enter details</p>
+                    <form action="">
+                    <label for="">Type</label>
+                    <select class="prop-xtics" name="Type" required="required">
+                        <option disabled>Select Property type</option>
+                        <option>3-bedroom</option>
+                        <option>2-bedroom</option>
+                    </select>
+                    <label for="">State</label>
+                    <select class="prop-xtics" name="state" required="required">
+                        <option disabled>Select state</option>
+                        <option>Kigali</option>
+                        <option>Butare</option>
+                    </select>
+                    <label for="">City</label>
+                    <select class="prop-xtics" name="city" required="required">
+                            <option disabled>Select city</option>
+                            <option>Kigali</option>
+                            <option>Musanze</option>
+                        </select>
+                    <input type="text" placeholder="address">
+                    <input type="text" placeholder="Price">
+                    <button type="button" class="btn" onclick="window.location.href = 'homepage.html'">Create post</button>
+                    <button type="button" class="btn" onclick="window.location.href = 'homepage.html'">Cancel</button>
+                </form></div>
+            </div>
+        </div>
+
+</body>
+</html>
