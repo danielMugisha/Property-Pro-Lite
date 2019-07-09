@@ -21,11 +21,37 @@
         <div id="nav-menu">
                 
             <ul>
-                <li><button>My properties</button></li>
                 <li><button onclick="myFunction()">New advert</button></li>
                 <li><button>Username</button></li>
+                <li><button>Logout</button></li>
             </ul>
         </div>
+    </div>
+
+    <!-- search -->
+    <div id="home-search">
+        <h2>Find you comfortable home</h2>
+        <form>
+            <select class="selector" name="location" required="required">
+                <option disabled>Select Property type</option>
+                <option>Gasabo</option>
+            </select>
+
+            <select class="selector" name="property" required="required">
+                <option disabled>Select Property type</option>
+                <option>2-Bedroom apartment</option>
+                <option>3-Bedroom apartment</option>
+                <option>Residential villa</option>
+                <option>Commercial/work place</option>
+            </select>
+            
+            <select class="selector" name="payType" required="required">
+                <option disabled>Select Property type</option>
+                <option>To Let</option>
+                <option>For Sale</option>
+            </select>
+            <button type="button" class="search-btn" >Search</button>
+        </form>
     </div>
     
     <!-- trending -->
@@ -73,31 +99,7 @@
         </div>
     </div>
 
-    <!-- search -->
-    <div id="home-search">
-        <h2>Find you comfortable home</h2>
-        <form>
-            <select class="selector" name="location" required="required">
-                <option disabled>Select Property type</option>
-                <option>Gasabo</option>
-            </select>
-
-            <select class="selector" name="property" required="required">
-                <option disabled>Select Property type</option>
-                <option>2-Bedroom apartment</option>
-                <option>3-Bedroom apartment</option>
-                <option>Residential villa</option>
-                <option>Commercial/work place</option>
-            </select>
-            
-            <select class="selector" name="payType" required="required">
-                <option disabled>Select Property type</option>
-                <option>To Let</option>
-                <option>For Sale</option>
-            </select>
-            <button type="button" class="search-btn" >Search</button>
-        </form>
-    </div>
+    
 
     <!-- footer -->
     <div id="main-footer">
@@ -105,7 +107,7 @@
     </div>
 
     
-    <!-- create post model -->
+    <!-- create post modal -->
     <div id="bg-modal-new">
             <div class="bg-modal-content">
                 <div>
