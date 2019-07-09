@@ -188,7 +188,12 @@ h1, h2, h3, p {
 }
 
 /*-- contacts & about --*/
-
+#references {
+    display: flex;
+}
+#about {
+    border-right: 1px solid #666261;
+}
 
 
 
@@ -266,7 +271,7 @@ h1, h2, h3, p {
     color: #666261
 }
 #wrap-content form a:hover {
-    color: #313030
+    color: #000000
 }
 
 
@@ -390,6 +395,7 @@ h1, h2, h3, p {
     /* ----contacts & about------ */
     #references {
         padding: 2em 1em;
+        display: block;
     }
     
     /* ----------footer---------- */
@@ -409,6 +415,9 @@ h1, h2, h3, p {
     .bg-modal-content iframe {
         display: none;
     }
+   #about{
+       border-right: none
+   }
 }
 
 
@@ -455,6 +464,13 @@ h1, h2, h3, p {
      .bg-modal-content iframe {
          display: none;
      }
+     #references {
+        padding: 2em 1em;
+        display: block;
+    }
+    #about{
+        border-right: none
+    }
 }
 
 /* ---------------tablet----------------- */

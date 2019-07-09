@@ -3,7 +3,11 @@
 // });
 
 // alert('hello')
-function myFunction () {
+myFunction = () => {
     document.getElementById('bg-modal-new').style.display = 'flex';
+};
+
+myFunction = () => {
+    document.getElementsByClassName('btn').style.display = 'flex';
 };
 
