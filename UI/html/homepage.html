@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js"></script>
     <title>Property Pro-Lite</title>
     
 </head>
@@ -61,37 +61,37 @@
     <div id="trend-properties">
         <div id="trend-wraper">
             <div id="prop-item" class="box">
-                <img src="images/house1.jpg" alt="">
+                <img src="../images/house1.jpg" alt="">
+                <p>Lorem: ipsum.</p>
+                <p>Lorem: ipsum.</p>
+                <button class="btn" onclick="myFunction1()">View More</button>
+            </div>
+            <div id="prop-item" class="box">
+                <img src="../images/house1.jpg" alt="">
                 <p>Lorem: ipsum.</p>
                 <p>Lorem: ipsum.</p>
                 <button class="btn">View More</button>
             </div>
             <div id="prop-item" class="box">
-                <img src="images/house1.jpg" alt="">
+                <img src="../images/house1.jpg" alt="">
                 <p>Lorem: ipsum.</p>
                 <p>Lorem: ipsum.</p>
                 <button class="btn">View More</button>
             </div>
             <div id="prop-item" class="box">
-                <img src="images/house1.jpg" alt="">
+                <img src="../images/house1.jpg" alt="">
                 <p>Lorem: ipsum.</p>
                 <p>Lorem: ipsum.</p>
                 <button class="btn">View More</button>
             </div>
             <div id="prop-item" class="box">
-                <img src="images/house1.jpg" alt="">
+                <img src="../images/house1.jpg" alt="">
                 <p>Lorem: ipsum.</p>
                 <p>Lorem: ipsum.</p>
                 <button class="btn">View More</button>
             </div>
             <div id="prop-item" class="box">
-                <img src="images/house1.jpg" alt="">
-                <p>Lorem: ipsum.</p>
-                <p>Lorem: ipsum.</p>
-                <button class="btn">View More</button>
-            </div>
-            <div id="prop-item" class="box">
-                <img src="images/house1.jpg" alt="">
+                <img src="../images/house1.jpg" alt="">
                 <p>Lorem: ipsum.</p>
                 <p>Lorem: ipsum.</p>
                 <button class="btn">View More</button>
@@ -147,6 +147,49 @@
                 </form></div>
             </div>
         </div>
+
+        <!-- specific property modal -->
+    <div id="bg-modal-specific">
+        <div class="bg-modal-content">
+            <div>
+                <p> picture</p>
+                <iframe width="300" height="300"></iframe>
+                <form action="#" enctype="multipart/form-data" method="POST">
+                    <input type="file"/>
+                    <input type="submit" class="btn" value="Upload image">
+                </form>
+            </div>
+            
+            <div id="details">
+                <p>Enter details</p>
+                <form action="">
+                <label for="">Type</label>
+                <select class="prop-xtics" name="Type" required="required">
+                    <option disabled>Select Property type</option>
+                    <option>3-bedroom</option>
+                    <option>2-bedroom</option>
+                </select>
+                <label for="">State</label>
+                <select class="prop-xtics" name="state" required="required">
+                    <option disabled>Select state</option>
+                    <option>Kigali</option>
+                    <option>Butare</option>
+                </select>
+                <label for="">City</label>
+                <select class="prop-xtics" name="city" required="required">
+                        <option disabled>Select city</option>
+                        <option>Kigali</option>
+                        <option>Musanze</option>
+                    </select>
+                <input type="text" placeholder="address">
+                <input type="text" placeholder="Price">
+                <button type="button" class="btn" onclick="window.location.href = 'homepage.html'">Update post</button>
+                <button type="button" class="btn" onclick="window.location.href = 'homepage.html'">Delete post</button>
+                <button type="button" class="btn" onclick="window.location.href = 'homepage.html'">Mark as unavailable</button>
+                <button type="button" class="btn" onclick="window.location.href = 'homepage.html'">Cancel</button>
+            </form></div>
+        </div>
+    </div>
 
 </body>
 </html>
