@@ -226,7 +226,7 @@ h1, h2, h3, p {
     justify-content: center
 }
 .bg-modal-content {
-    color: #3a454d;
+    color: rgba(156, 136, 136, 0.61);
     display: flex;
     width: 70%;
     background-color:rgb(212, 204, 204);
@@ -406,13 +406,17 @@ h1, h2, h3, p {
     #references {
         padding: 2em 1em;
         display: block;
+
     }
     
     /* ----------footer---------- */
     #main-footer {
+        height: 50px;
         padding: 1em;
         background: #e8491d57;
+        font-size: 10px;
     }
+    
     
     #bg-modal-signup {
        display: block;
