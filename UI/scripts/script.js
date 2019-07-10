@@ -7,7 +7,7 @@ myFunction = () => {
     document.getElementById('bg-modal-new').style.display = 'flex';
 };
 
-myFunction = () => {
-    document.getElementsByClassName('btn').style.display = 'flex';
+myFunction1 = () => {
+    document.getElementsById('bg-modal-specific').style.display = 'flex';
 };
 
