@@ -214,7 +214,7 @@ h1, h2, h3, p {
     padding: 20px;
 }
 #wrap-content {
-    width: 90%;
+    width: 60%;
     background: #b3a39f;
     box-shadow: 0 1px 1px rgba(182, 182, 182, 0.75);
     border:none;
@@ -228,7 +228,7 @@ h1, h2, h3, p {
     margin: auto;
 }
 #wrap-content form input {
-    width: 60%;
+    width: 50%;
     padding: 5px;
     height: 25px;
     display: block;
@@ -256,7 +256,7 @@ h1, h2, h3, p {
     text-align: center;
     padding: 100px; 
     color: #000000;
-    border: 1px solid black;
+    
 }
 
 #detailed {
@@ -266,18 +266,29 @@ h1, h2, h3, p {
 
 #detailed-mine {
     margin: auto;
+    
+}
+
+.form-row {
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.form-row select, input {
+    flex: 3;
+    padding: 10px;
+    float: right;
+}
+.form-row label {
+    flex: 1;
 }
 
 #imageholder {
     margin:  0 auto;
 }
 
-#detailed-mine select, input{
-    padding: 10px;
-    width: 300px;
-    text-align: center;
-    margin: auto;
-}
+
 
 
 
@@ -425,6 +436,12 @@ h1, h2, h3, p {
    #inner-contain {
     display: block;
     }
+    #wrap-content {
+        width: 90%; 
+    }
+    #wrap-content form input {
+        width: 70%; 
+    }
 }
 
 
@@ -481,6 +498,12 @@ h1, h2, h3, p {
     #inner-contain {
         display: block;
     }
+    #wrap-content {
+        width: 90%; 
+    }
+    #wrap-content form input {
+        width: 70%; 
+    }
 }
 
 /* ---------------tablet----------------- */
@@ -504,6 +527,12 @@ h1, h2, h3, p {
     }
     #inner-contain {
         display: block;
+    }
+    #wrap-content {
+        width: 90%; 
+    }
+    #wrap-content form input {
+        width: 70%; 
     }
     
 }
