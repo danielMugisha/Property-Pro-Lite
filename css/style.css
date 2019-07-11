@@ -214,7 +214,7 @@ h1, h2, h3, p {
     padding: 20px;
 }
 #wrap-content {
-    width: 60%;
+    width: 40%;
     background: #b3a39f;
     box-shadow: 0 1px 1px rgba(182, 182, 182, 0.75);
     border:none;
@@ -228,11 +228,11 @@ h1, h2, h3, p {
     margin: auto;
 }
 #wrap-content form input {
-    width: 50%;
+    width: 90%;
     padding: 5px;
     height: 25px;
     display: block;
-    margin: auto;
+    margin: 0 10px;
 }
 #wrap-content form a {
     text-decoration: none;
@@ -436,12 +436,7 @@ h1, h2, h3, p {
    #inner-contain {
     display: block;
     }
-    #wrap-content {
-        width: 90%; 
-    }
-    #wrap-content form input {
-        width: 70%; 
-    }
+    
 }
 
 
@@ -498,12 +493,7 @@ h1, h2, h3, p {
     #inner-contain {
         display: block;
     }
-    #wrap-content {
-        width: 90%; 
-    }
-    #wrap-content form input {
-        width: 70%; 
-    }
+    
 }
 
 /* ---------------tablet----------------- */
@@ -528,11 +518,6 @@ h1, h2, h3, p {
     #inner-contain {
         display: block;
     }
-    #wrap-content {
-        width: 90%; 
-    }
-    #wrap-content form input {
-        width: 70%; 
-    }
+    
     
 }
