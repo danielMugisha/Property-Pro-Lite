@@ -1,0 +1,523 @@
+/* ---------core styles----------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #3a454d;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    height: 100%;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+/* ----------header--------- */
+#navigation {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #ec4a1d8a;
+}
+#navigation h1 {
+    font-size: 30px;
+}
+#navigation h1 span {
+    color: #ec4a1d8a;
+}
+#menu {
+    padding: 0 40px;
+}
+
+#mobile-nav {
+    display: none;
+}
+#nav-menu {
+    padding-top: 40px;
+  
+}
+
+#nav-menu ul {
+    list-style-type: none;
+}
+
+#nav-menu ul li {
+    display: inline;
+    padding: 10px; 
+    bottom: 0;
+}
+
+#nav-menu ul li a {
+    text-decoration: none;
+    padding-top: 50px;
+    color: #f4f4f4;
+}
+
+#nav-menu ul li button {
+    padding-top: 20px;
+    color: #f4f4f4;
+    bottom: 0;
+    background: #ffffff00;
+    font-size: 20px;
+    border: none;
+}
+
+/* -------welcome-------- */
+#welcome {
+    min-height: 550px;
+    color: #fff;
+    text-align: center;
+}
+
+#welcome .bg-image {
+    position: absolute;
+    background: #3a454d url(../images/welcome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+    opacity: .4;
+}
+
+#welcome h1 {
+    padding-top: 200px;
+}
+
+
+/* search */
+#home-search {
+    min-height: 130px;
+    background-color: #e8491d57;
+    padding-bottom: 2em;
+}
+
+#home-search form{
+    display: block;
+}
+
+#home-search .selector {
+    padding: 4px;
+    height: 40px;
+    width: 300px;
+}
+
+.search-btn {
+    height: 40px;
+    background: #af4426;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+.search-btn:hover {
+    background: #b3a39f;
+    border: none;
+}
+
+
+/* --------Services-------- */
+#boxes {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 25%;
+    height: fit-content;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+}
+.box p, h2 {
+    padding: 0 1em;
+}
+
+
+/* -----------trending ----------- */
+#trend-properties {
+    background: #c9c5c5;
+    color: #3a454d;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#trend-title {
+    background: #c9c5c5;
+    color: #3a454d;
+    height: 100px;  
+}
+
+#trend-wraper {
+    padding: 20px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+#prop-item {
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(182, 182, 182, 0.75);
+}
+
+#trendProp .item img {
+    width: 350px;
+    height: 200px;
+}
+
+.btn {
+    height: 38px;
+    background: #3a454d;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*-- contacts & about --*/
+#references {
+    display: flex;
+}
+#about {
+    border-right: 1px solid #666261;
+}
+
+
+
+
+/* ---------footer------ */
+#main-footer {
+    background: #e8491d57;
+}
+
+/* -----sign up-------- */
+
+#wrap {
+    /* width: 100%; */
+    min-height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#wrap-content {
+    width: 40%;
+    background: #b3a39f;
+    box-shadow: 0 1px 1px rgba(182, 182, 182, 0.75);
+    border:none;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#wrap-content form {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+#wrap-content form input {
+    width: 90%;
+    padding: 5px;
+    height: 25px;
+    display: block;
+    margin: 0 10px;
+}
+#wrap-content form a {
+    text-decoration: none;
+    display: block;
+    color: #666261
+}
+#wrap-content form a:hover {
+    color: #000000
+}
+
+
+/* other pages */
+
+/* specific property */
+#contain{
+    width: 100%;
+}
+#inner-contain {
+    display: flex;
+    background-color:rgb(212, 204, 204);
+    text-align: center;
+    padding: 100px; 
+    color: #000000;
+    
+}
+
+#detailed {
+    padding: 50px;
+    flex: 2
+}
+
+#detailed-mine {
+    margin: auto;
+    
+}
+
+.form-row {
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.form-row select, input {
+    flex: 3;
+    padding: 10px;
+    float: right;
+}
+.form-row label {
+    flex: 1;
+}
+
+#imageholder {
+    margin:  0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------responsiveness------------------- */
+
+
+/* --------------mobile----------------- */
+@media (max-width: 400px) {
+    #navigation {
+        display: inline;
+    }
+
+    #menu {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #mobile-nav {
+        display: block;
+        transform: rotate(90deg);
+        font-size: 50px;
+        height: 70px;
+        margin-top: 0.4em;
+        padding-top: 0;
+    }
+
+    #humberger {
+        cursor: pointer;
+    }
+    
+    #nav-menu {
+        display: none;
+        width: 50%;
+        right: 0;
+        position: absolute;
+        background: #3a454dbd;
+        margin-top: 0; 
+        padding: 0; 
+    }
+
+    #nav-menu ul {
+        display: none;
+        padding: 0;
+    }
+
+    #nav-menu ul li {
+        display: block;
+        top: 0;
+        padding: 0;
+    }
+    
+    #nav-menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: #f4f4f4;
+        padding: 5px;
+    }
+    #humberger:hover + #nav-menu ul {
+        display: inline-block;
+    }
+    
+    #nav-menu a:hover {
+        background: #3a454d;
+        
+    }
+    
+    #welcome h1 {
+        padding: 100px 20px 0 20px;;
+       
+    }
+    
+    #welcome p {
+        padding: 20px 20px 0 20px;
+    }
+
+
+    /* search */
+
+    #home-search .selector {
+        height: 25px;
+        width: 80%;
+    }
+    
+    .search-btn {
+        display: block;
+        margin: 20px auto 0;
+    }
+    
+    /* --------Services-------- */
+    #boxes {
+        display: block;
+        width: 100%;
+    }
+    
+    .box{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+    
+    /* ----------trending properties--------- */
+    #trend-wraper {
+        padding: 0;
+    }
+    #prop-item {
+        padding: 0;
+    }
+    /* ----contacts & about------ */
+    #references {
+        padding: 2em 1em;
+        display: block;
+
+    }
+    
+    /* ----------footer---------- */
+    #main-footer {
+        height: 50px;
+        padding: 1em;
+        background: #e8491d57;
+        font-size: 10px;
+    }
+    
+    
+    #bg-modal-signup {
+       display: block;
+    }
+    
+    .bg-modal-content {
+        display: block;
+    }
+
+    .bg-modal-content iframe {
+        display: none;
+    }
+   #about{
+       border-right: none
+   }
+   #inner-contain {
+    display: block;
+    }
+    
+}
+
+
+
+/* --------------phablet-------------- */
+
+@media (max-width: 550px) {
+    #navigation {
+        display: block;
+    }
+
+    #nav-menu {
+        display: inline; 
+    }
+   
+    #home-search .selector {
+        height: 25px;
+        width: 80%;
+    }
+    
+    .search-btn {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    #boxes {
+        display: block;
+        width: 100%;
+    }
+    
+    .box{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+    #bg-modal-signup {
+        display: block;
+     }
+     
+     .bg-modal-content {
+         display: block;
+     }
+ 
+     .bg-modal-content iframe {
+         display: none;
+     }
+     #references {
+        padding: 2em 1em;
+        display: block;
+    }
+    #about{
+        border-right: none
+    }
+    #inner-contain {
+        display: block;
+    }
+    
+}
+
+/* ---------------tablet----------------- */
+@media (max-width: 750px) {
+    #navigation {
+        display: block;
+    }
+
+    #nav-menu {
+        display: inline; 
+    }
+   
+    #home-search .selector {
+        height: 25px;
+        width: 80%;
+    }
+    
+    .search-btn {
+        display: block;
+        margin: 20px auto 0;
+    }
+    #inner-contain {
+        display: block;
+    }
+    
+    
+}
