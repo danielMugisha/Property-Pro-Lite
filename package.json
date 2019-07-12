@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/danielMugisha/Property-Pro-Lite#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "cloudinary": "^1.14.0",
     "connect-multiparty": "^2.2.0",
     "dotenv": "^8.0.0",
@@ -35,7 +36,6 @@
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "coveralls": "^3.0.5",
-    "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "mocha": "^6.1.4",
     "mocha-lcov-reporter": "^1.3.0",

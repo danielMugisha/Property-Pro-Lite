@@ -11,11 +11,12 @@ const router = express.Router();
 router.get("/users", getAllUsers);
 router.get("/users/:id", getUserById);
 router.post("/user", createUser);
+// router.post("/user/login", signinUser)
 
 router.get("/properties", getAllProperties);
 router.get("/properties/:id", getPropertyById);
 router.get("/properties/type/:type", getPropertyByType);
-router.post("/proprties", createProperty);
+router.post("/property", createProperty);
 
 
 export default router;
