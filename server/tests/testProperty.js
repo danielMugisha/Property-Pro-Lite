@@ -1,3 +1,6 @@
+/* eslint-disable indent */
+/* eslint-disable indent-legacy */
+/* eslint-disable sort-keys */
 /* eslint-disable no-magic-numbers */
 /* eslint-disable handle-callback-err */
 /* eslint-disable max-lines-per-function */
@@ -112,30 +115,38 @@ describe("properties", () => {
 
     describe("POST /", () => {
 
-      it('it should return 200 and newly created user', done => {
+        it("New user, it should return 200", (done) => {
+
+            const user = {
+                "id": 6,
+                "email": "danieldenzom@yahoo.com",
+                "first_name": "Daniel",
+                "last_name": "MUGISHA",
+                "password": "dandenzo",
+                "phoneNumber": "0987654321",
+                "address": "Kagugu",
+                "is_admin": false
+            };
+
+            chai.request(app).
+                post("/api/v1/property").
+                send(user).
+                end((err, res) => {
+
+                    expect(res.status).to.equal(400);
+                    done();
+                
+                });
         
-        chai. 
-          request(app)
-          .post('/api/av1/user').
-          end((err, res) => {
-
-            res.should.have.status(200);
-            res.body.should.have.
-                property("status").
-                be.a("string").
-                eql("success");
-            done();
-
-      })
+        });
+    
     });
 
-        
-     
-  describe("DELETE /", () => {
+    describe("DELETE /", () => {
 
         it("it should return 200 status when delete operation was successful", (done) => {
 
-            chai.
+          chai.
                 request(app).
                 delete("/api/v1/property/del/1").
                 end((err, res) => {
@@ -149,11 +160,11 @@ describe("properties", () => {
 
                 });
 
-        });
+      });
 
         it("it should return 404 with error when deletion fails", (done) => {
 
-            chai.
+          chai.
                 request(app).
                 delete("/api/v1/property/del/100").
                 end((err, res) => {
@@ -164,9 +175,9 @@ describe("properties", () => {
 
                 });
 
-        });
+      });
 
     });
 
-})
 });
+
