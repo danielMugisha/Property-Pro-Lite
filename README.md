@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/danielMugisha/Property-Pro-Lite.svg?branch=develop)](https://travis-ci.org/danielMugisha/Property-Pro-Lite)
+
+
+
 # Property-Pro-Lite
 # This web site provides the user with capabilities like:
 1. User can sign up.  
