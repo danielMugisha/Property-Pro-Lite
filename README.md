@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/danielMugisha/Property-Pro-Lite.svg?branch=develop)](https://travis-ci.org/danielMugisha/Property-Pro-Lite)
 
+[![Coverage Status](https://coveralls.io/repos/github/danielMugisha/Property-Pro-Lite/badge.svg?branch=develop)](https://coveralls.io/github/danielMugisha/Property-Pro-Lite?branch=develop)
+
 
 
 # Property-Pro-Lite
