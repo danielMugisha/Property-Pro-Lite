@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">21.21% </span>
+        <span class="strong">60.61% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>7/33</span>
+        <span class='fraction'>20/33</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>2/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">31.82% </span>
+        <span class="strong">59.09% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>7/22</span>
+        <span class='fraction'>13/22</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -155,11 +155,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -168,15 +166,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -236,11 +236,11 @@ export const <span class="fstat-no" title="function not covered" >getUserById </
 &nbsp;
 };
 &nbsp;
-export const <span class="fstat-no" title="function not covered" >createUser </span>= (req, res) =&gt; <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span></span></span></span>
+export const createUser = (req, res) =&gt; {
 &nbsp;
-    const {email, first_name, last_name, address, phoneNumber, password, is_admin} = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    const {email, first_name, last_name, address, phoneNumber, password, is_admin} = req.body;
 &nbsp;
-    const newUser = <span class="cstat-no" title="statement not covered" >{</span>
+    const newUser = {
         id: users.length + 1,
         email,
         first_name,
@@ -251,15 +251,15 @@ export const <span class="fstat-no" title="function not covered" >createUser </s
         is_admin
     };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    users.p</span>ush[newUser];
+    users.push[newUser];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    jwt.s</span>ign(newUser, 'DanielAndela', { expiresIn: 3600 }, <span class="fstat-no" title="function not covered" >(e</span>rr, token) =&gt; {
+    jwt.sign(newUser, 'DanielAndela', { expiresIn: 3600 }, (err, token) =&gt; {
 &nbsp;
-        const payload = <span class="cstat-no" title="statement not covered" >{</span>
+        const payload = {
             token,
             newUser,
         }
-<span class="cstat-no" title="statement not covered" >    return r</span>es.status(200).json({
+    return res.status(200).json({
         "status": 'success',
         "data": {
             payload
@@ -301,7 +301,7 @@ export const <span class="fstat-no" title="function not covered" >loginUser </sp
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Jul 13 2019 10:12:30 GMT+0200 (South Africa Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Jul 13 2019 10:27:45 GMT+0200 (South Africa Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>
