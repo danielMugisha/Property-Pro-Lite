@@ -14,6 +14,8 @@ import Joi from "@hapi/joi";
 import app from "../index";
 import properties from "../models/properties";
 import propertycontrol from "../controllers/propertycontrol";
+import users from "../models/users";
+import usercontrol from "../controllers/usercontrol";
 
 // Configure chai
 chai.use(chaiHttp);
@@ -108,23 +110,39 @@ describe("properties", () => {
 
     });
 
-    //describe("POST /", () => {}
+    describe("POST /", () => {
+
+      it('it should return 200 and newly created user', done => {
+        
+        chai. 
+          request(app)
+          .post('/api/av1/user').
+          end((err, res) => {
+
+            res.should.have.status(200);
+            res.body.should.have.
+                property("status").
+                be.a("string").
+                eql("success");
+            done();
+
+      })
+    });
 
         
      
-    describe("DELETE /", () => {
+  describe("DELETE /", () => {
 
         it("it should return 200 status when delete operation was successful", (done) => {
 
             chai.
                 request(app).
-                delete("/api/v1/property/1").
+                delete("/api/v1/property/del/1").
                 end((err, res) => {
 
                     res.should.have.status(200);
-                    res.body.should.have.property("data").be.a("object");
-                    res.body.should.have.
-                        property("data").
+                    res.body.should.have.property("status").be.a("string");
+                    res.body.should.
                         have.property("message").
                         be.a("string");
                     done();
@@ -137,11 +155,11 @@ describe("properties", () => {
 
             chai.
                 request(app).
-                delete("/api/v1/property/100").
+                delete("/api/v1/property/del/100").
                 end((err, res) => {
 
                     res.should.have.status(404);
-                    res.body.should.have.property("error").be.a("string");
+                    res.body.should.have.property("status").be.a("string").eql("error");
                     done();
 
                 });
@@ -150,4 +168,5 @@ describe("properties", () => {
 
     });
 
+})
 });
