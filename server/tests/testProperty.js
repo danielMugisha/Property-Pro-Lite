@@ -113,34 +113,34 @@ describe("properties", () => {
 
     });
 
-    describe("POST /", () => {
+    // describe("POST /", () => {
 
-        it("New user, it should return 200", (done) => {
+    //     it("New user, it should return 200", (done) => {
 
-            const user = {
-                "id": 6,
-                "email": "danieldenzom@yahoo.com",
-                "first_name": "Daniel",
-                "last_name": "MUGISHA",
-                "password": "dandenzo",
-                "phoneNumber": "0987654321",
-                "address": "Kagugu",
-                "is_admin": false
-            };
+    //         const user = {
+    //             "id": 6,
+    //             "email": "danieldenzom@yahoo.com",
+    //             "first_name": "Daniel",
+    //             "last_name": "MUGISHA",
+    //             "password": "dandenzo",
+    //             "phoneNumber": "0987654321",
+    //             "address": "Kagugu",
+    //             "is_admin": false
+    //         };
 
-            chai.request(app).
-                post("/api/v1/property").
-                send(user).
-                end((err, res) => {
+    //         chai.request(app).
+    //             post("/api/v1/property").
+    //             send(user).
+    //             end((err, res) => {
 
-                    expect(res.status).to.equal(400);
-                    done();
+    //                 expect(res.status).to.equal(400);
+    //                 done();
                 
-                });
+    //             });
         
-        });
+    //     });
     
-    });
+    // });
 
     describe("DELETE /", () => {
 
