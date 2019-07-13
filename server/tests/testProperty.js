@@ -46,7 +46,7 @@ describe("properties", () => {
 
             chai.
                 request(app).
-                get("/api/v1/property/1").
+                get("/api/v1/properties/1").
                 end((err, res) => {
 
                     res.should.have.status(200);
@@ -62,12 +62,12 @@ describe("properties", () => {
 
             chai.
                 request(app).
-                get("/api/v1/property/100").
+                get("/api/v1/properties/100").
                 end((err, res) => {
 
                     res.should.have.status(404);
-                    res.body.should.have.property("error").be.a("string");
-                    res.body.should.have.property("error").eql("No property found");
+                    res.body.should.have.property("status").be.a("string");
+                    res.body.should.have.property("message").eql("no property found");
                     done();
 
                 });
@@ -78,7 +78,7 @@ describe("properties", () => {
 
             chai.
                 request(app).
-                get("/api/v1/property?type=3 bedroom").
+                get("/api/v1/properties/type/3-bedroom").
                 end((err, res) => {
 
                     res.should.have.status(200);

@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">73.68% </span>
+        <span class="strong">80% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>70/95</span>
+        <span class='fraction'>76/95</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,16 +35,16 @@
         <span class='fraction'>32/34</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">74.19% </span>
+        <span class="strong">80.65% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>69/93</span>
+        <span class='fraction'>75/93</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -396,9 +396,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -413,8 +413,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -428,7 +428,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -690,13 +690,13 @@ describe("properties", () =&gt; {
 &nbsp;
             chai.
                 request(app).
-                get("/api/v1/property/1").
+                get("/api/v1/properties/1").
                 end((err, res) =&gt; {
 &nbsp;
                     res.should.have.status(200);
-<span class="cstat-no" title="statement not covered" >                    res.</span>body.should.have.property("data").be.a("object");
-<span class="cstat-no" title="statement not covered" >                    res.</span>body.should.have.property("data").eql(properties[0]);
-<span class="cstat-no" title="statement not covered" >                    done();</span>
+                    res.body.should.have.property("data").be.a("object");
+                    res.body.should.have.property("data").eql(properties[0]);
+                    done();
 &nbsp;
                 });
 &nbsp;
@@ -706,13 +706,13 @@ describe("properties", () =&gt; {
 &nbsp;
             chai.
                 request(app).
-                get("/api/v1/property/100").
+                get("/api/v1/properties/100").
                 end((err, res) =&gt; {
 &nbsp;
                     res.should.have.status(404);
-                    res.body.should.have.property("error").be.a("string");
-<span class="cstat-no" title="statement not covered" >                    res.</span>body.should.have.property("error").eql("No property found");
-<span class="cstat-no" title="statement not covered" >                    done();</span>
+                    res.body.should.have.property("status").be.a("string");
+                    res.body.should.have.property("message").eql("no property found");
+                    done();
 &nbsp;
                 });
 &nbsp;
@@ -722,11 +722,11 @@ describe("properties", () =&gt; {
 &nbsp;
             chai.
                 request(app).
-                get("/api/v1/property?type=3 bedroom").
+                get("/api/v1/properties/type/3-bedroom").
                 end((err, res) =&gt; {
 &nbsp;
                     res.should.have.status(200);
-<span class="cstat-no" title="statement not covered" >                    res.</span>body.should.have.property("data").be.a("array");
+                    res.body.should.have.property("data").be.a("array");
 <span class="cstat-no" title="statement not covered" >                    done();</span>
 &nbsp;
                 });
@@ -946,7 +946,7 @@ describe("properties", () =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Jul 13 2019 05:19:24 GMT+0200 (South Africa Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Jul 13 2019 05:41:03 GMT+0200 (South Africa Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>
