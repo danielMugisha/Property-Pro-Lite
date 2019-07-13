@@ -11,7 +11,6 @@
 import users from "../models/users";
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
-import response from "../helpers/responses"
 
 export const getAllUsers = (req, res) => res.send(users);
 
@@ -46,11 +45,39 @@ export const createUser = (req, res) => {
             token,
             newUser,
         }
-    return res.status(201).json({
+    return res.status(200).json({
         "status": 'success',
         "data": {
             payload
         }
     });
     })
+}
+
+export const loginUser = (req, res) => {
+
+    const {email, password} = req.body;
+
+    const searchUser = users.filter(item => (item.email == email) && (item.password == password));
+
+    if(searchUser.length > 0){
+    jwt.sign(searchUser, 'DanielAndela', { expiresIn: 3600 }, (err, token) => {
+
+        const payload = {
+            token,
+            searchUser,
+        }
+    return res.status(200).json({
+        "status": 'success',
+        "data": payload
+    });
+    })  
+    }
+    else{
+        return res.status(404).json({
+            "status": 'error',
+            "message": 'no user found'
+        })
+    }
+
 }

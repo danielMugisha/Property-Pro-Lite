@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "1. User can sign up.  \r 2. User can sign in.  \r 3. User (agent) can post a property advert.  \r 4. User (agent) can update the details of a property advert.  \r 5. User (agent) can mark his/her posted advert as sold.  \r 6. User (agent) can delete a property advert.  \r 7. User can view all properties adverts.  \r 8. User can view all properties of a specific type - 2 bedroom, 3 bedroom, mini flat etc.  \r 9. User can view a specific property advert.",
   "main": "index.js",
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ]
+  },
   "scripts": {
     "start": "nodemon --exec babel-node server/index.js",
     "build": "mkdir dist && babel server -s -d dist",
@@ -24,8 +29,10 @@
     "cloudinary": "^1.14.0",
     "connect-multiparty": "^2.2.0",
     "dotenv": "^8.0.0",
+    "eslint": "^6.0.1",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "should": "^13.2.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
