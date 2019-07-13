@@ -4,8 +4,8 @@
 /* eslint-disable sort-imports */
 /* eslint-disable linebreak-style */
 import express from "express";
-import {createUser, loginUser, getAllUsers, getUserById} from "../controllers/userControl";
-import {createProperty, getAllProperties, getPropertyById, getPropertyByType, deleteProperty} from "../controllers/propertyControl";
+import {createUser, loginUser} from "../controllers/usercontrol";
+import {createProperty, getAllProperties, getPropertyById, getPropertyByType, deleteProperty} from "../controllers/propertycontrol";
 const router = express.Router();
 
 // router.get("/users", getAllUsers);
