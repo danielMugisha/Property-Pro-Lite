@@ -26,7 +26,7 @@
   "homepage": "https://github.com/danielMugisha/Property-Pro-Lite#readme",
   "dependencies": {
     "@hapi/joi": "^15.1.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "cloudinary": "^1.14.0",
     "connect-multiparty": "^2.2.0",
     "dotenv": "^8.0.0",
